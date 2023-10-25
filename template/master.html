@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="make your trips memorable">
+    <meta name="keywords" content="LogaTrips,traveling partner">
+    <meta name="author" content="madstudio.inc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+</head>
+<body>
+  <!--nav bar-->
+<header class="p-0">
+  <div class="container-fluid">
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img class="logo" src="{% static 'images/logo.jpeg'%}"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Tour Packages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/hourlyrental">Hourly Rental</a></li>
+            <li><a class="dropdown-item" href="templepackage/">Temple Packages</a></li>
+            <li><a class="dropdown-item" href="/customizedpackage">Customized Packages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/contact">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link " href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</header>
+
+{% block content%}
+{% endblock %}
+    <script src="{% static 'script/script.js'%}"></script>
+    
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <footer class="text-left element-animate" style="margin-bottom: -15px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 pt-3">
+                    <img src="{% static 'images/logo.jpeg'%}"class="logo"><br><br>
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/faq">Faq</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/terms&conditions">Terms & Condition</a>
+                      </li>
+                    </ul>
+              </div>
+                <div class="col-sm-12 col-md-4 pt-3" id=contact>
+                    <h4>Contact Us</h4>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="mailto:mail@logatrips.com" target="blank"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> mail@logatrips.com</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="tel:+918122822099"><i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i> +91 81228 22099</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tel:04423614774"><i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i> 044 23614774</a>
+                      </li>
+                        <li class="nav-item"><a class="nav-link" href="https://maps.app.goo.gl/Caa2adxPHL6wx7Qr5" target="blank"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 164, Thirugnanasambandar St,<br> Tiruvalleeswarar Nagar, Thirumangalam, <br>Anna Nagar West Extension, Chennai,<br> Tamil Nadu 600050.</a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="col-sm-12 col-md-4 pt-3">
+                        <iframe style="width:350px;height: 250px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.23085534075!2d80.19089877450445!3d13.084550512392987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526403fa2faca3%3A0x7994556e59d2bb29!2s164%2C%20Thirugnanasambandar%20St%2C%20Tiruvalleeswarar%20Nagar%2C%20Thirumangalam%2C%20Anna%20Nagar%20West%20Extension%2C%20Chennai%2C%20Tamil%20Nadu%20600050!5e0!3m2!1sen!2sin!4v1696420177166!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+            <hr>
+            <div class="copy text-center">
+                <p><small> All rights reserved @ LogaTrips.com, 2023.</small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title%}logatrips.com{% endblock %}
+{% block content %}
+<section>
+<div class="partners">
+    <div class="container">
+        <div class="col-md-12">
+        <h3>Join Us</h3>
+        <p>Partners are welcome to take care of business development. Email your details to us to get call back from our team, Lets Grow together</p>
+       <form  method="post">
+                <div class="form-group">
+                    <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Your Full Name*" >
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" autocomplete="off" class="form-control" placeholder="Your Email*">
+                </div>
+                <div class="form-group" >
+                        <textarea class="form-control"  autocomplete="off"  rows="8" id="comment"  placeholder="Let us know what makes you join us" name="message"></textarea>
+                    <br>
+                    <input type="submit" value="Send" class="form-control" class="btn btn-primary" style="max-width: 180px; margin-left: auto;">
+                </div>
+            </form>
+    </div>
+</div>
+</div>
+</section>
+{% endblock %}

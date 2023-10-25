@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+ /* Hide the number input's arrow buttons */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+*, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h3
+{
+  font-weight: 800;
+}
+
+
+h4 {
+  font-weight: 600;
+
+}
+
+p {
+  line-height: 1;
+}
+
+header {
+  background: #c42469;
+  padding: 10px;
+
+}
+.logo
+{
+  width: 180px;
+  height: 50px;
+}
+.card
+{
+  background-color: ghostwhite;
+  color: black;
+  padding-top: 10px;
+}
+section .main
+{
+  width: 100%;
+}
+header .nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .nav-link
+{
+  color: #f5eeee;
+  font-weight: 500;
+}
+header .nav-link:hover
+{
+  color:white ;
+}
+a{
+  color: #f5f7f6;
+}
+.navbar-dark .navbar-nav .nav-link .btn {
+  color: #fff;
+  padding: 6px 20px;
+}
+
+#popupForm .modal-content {
+  border-radius: 0;
+  border: none;
+
+}
+
+#popupForm .modal-body, #popupForm .modal-footer {
+  padding: 40px;
+}
+section {
+  padding: 10px 0;
+}
+footer{
+  background: #c42469 ;
+  color: white;
+}
+footer .nav-link
+{
+  color: #e3dede;
+}
+footer .nav-link:hover
+{
+  color: white;
+}
+.sample
+{
+  width: 450px;
+  height: 270px;
+}
+.carousel-caption
+{
+text-align: left;
+left: 30px;
+right: auto;
+}
+@media screen and (max-width: 1200px) {
+  .features .features-list {
+    padding: 0;
+  }
+  .features .features-list li {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .features .features-list li h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 992px) {
+  .features .features-list li {
+    width: 45%;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  .logo {
+    height: 50px;
+    margin: 16px 0;
+  }
+  .carousel
+  {
+    width: 100%;
+  }
+  .carousel-c
+  header .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav .nav-link {
+    font-size: 12px;
+    padding: 8px 10px;
+    justify-content: center;
+  }
+  header .nav .btn {
+    height: 36px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h3::after {
+    width: 21px;
+    height: 36px;
+  }
+  footer {
+  background: #c42469;
+  padding: 10px;
+}
+  footer.text-left {
+    text-align: center !important;
+  }
+  
+  footer .nav {
+    margin: 45px 0;
+  }
+}
+/*# sourceMappingURL=static-style.css.map */
