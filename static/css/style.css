@@ -10,11 +10,11 @@
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
 h3
 {
   font-weight: 800;
 }
-
 
 h4 {
   font-weight: 600;
@@ -25,11 +25,7 @@ p {
   line-height: 1;
 }
 
-header {
-  background: #c42469;
-  padding: 10px;
 
-}
 .logo
 {
   width: 180px;
@@ -45,20 +41,44 @@ section .main
 {
   width: 100%;
 }
+header {
+  margin: 75px;
+}
+nav
+{
+  background-color: #c42469;
+}
 header .nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
+
           justify-content: flex-end;
 }
 
 header .nav-link
 {
   color: #f5eeee;
-  font-weight: 500;
+  font-weight: 600;
 }
 header .nav-link:hover
 {
   color:white ;
+}
+.dropdown-menu a.dropdown-item
+{
+  background-color: #f5eeee;
+  color: #c42469;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.5s ,color 0.5s ;
+}
+.dropdown-menu a.dropdown-item:hover
+{
+  background-color: #c42469;
+  color: #f5eeee;
+  font-weight: 600;
+
 }
 a{
   color: #f5f7f6;

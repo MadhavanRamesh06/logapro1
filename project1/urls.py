@@ -26,6 +26,7 @@ urlpatterns = [
     path('contact/',views.contact),
     path('templepackage/', views.templepage),
     path('hourlyrental/',views.hourlyrental),
+    path('recruitment/',views.recruitment),
     path('customizedpackage/', views.customizepack),
     path('about/', views.about),
     path('terms&conditions/', views.tc),

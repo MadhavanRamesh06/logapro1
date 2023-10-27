@@ -7,7 +7,7 @@ def home(req):
     context = {
     'key': ob,
     }
-    return render(req,"index.html",context)
+    return render(req,"home.html",context)
 
 
 def templepage(req):
@@ -39,3 +39,5 @@ def tc(req):
     return render(req,"ut.html")
 def faq(req):
     return render(req,"ut.html")
+def recruitment(req):
+    return render(req,"recruitment.html")

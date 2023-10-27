@@ -14,9 +14,9 @@
 </head>
 <body>
   <!--nav bar-->
-<header class="p-0">
+<header>
   <div class="container-fluid">
-<nav class="navbar navbar-expand-sm navbar-dark">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><img class="logo" src="{% static 'images/logo.jpeg'%}"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -31,8 +31,14 @@
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Tour Packages</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/hourlyrental">Hourly Rental</a></li>
-            <li><a class="dropdown-item" href="templepackage/">Temple Packages</a></li>
+            <li><a class="dropdown-item" href="/templepackage">Temple Packages</a></li>
             <li><a class="dropdown-item" href="/customizedpackage">Customized Packages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Recruitment</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/recruitment">Tourist Guide</a></li>
           </ul>
         </li>
         <li class="nav-item">
