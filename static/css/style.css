@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
  /* Hide the number input's arrow buttons */
     input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
+    input[type="number"]::-webkit-outer-spin-button 
+    {
       -webkit-appearance: none;
       margin: 0;
     }
@@ -51,7 +52,6 @@ nav
 header .nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-
           justify-content: flex-end;
 }
 
@@ -146,6 +146,7 @@ right: auto;
 @media screen and (max-width: 768px) {
   header {
     text-align: center;
+    margin-bottom: 100px;
   }
   .logo {
     height: 50px;
